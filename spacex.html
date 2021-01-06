@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(21 21 51);
+        }
+
+        body {
+            font-weight: bold;
+            font-size: 24px;
+            overflow: hidden;
+        }
+
+        /* Navbar Styling */
+
+        .navbar li {
+            list-style: none;
+        }
+
+        .navbar .nav-link a {
+            background-color:rgb(44 44 79);
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 15px;
+            border-radius: 20px;
+            transition: all 0s ease-in;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            margin-top: 50px;
+            
+            height: 10vh;
+        }
+
+        .nav-left{
+            font-size: 24px;
+            left: 0px;
+            margin-left: 30px;
+        }
+
+        .nav-right{
+            display: flex;
+            position: absolute;
+            right: 0px;
+            flex-direction: row;
+            margin-right: 50px;
+        }
+
+        /* li:nth-child(1) {
+            margin-left: 20px;;
+            margin-right: 00px;
+        }
+
+        li:nth-child(2) {
+            margin-left: 0px;
+        } */
+
+        nav.link {
+            text-align: center;
+            padding: 10px
+        }
+
+        .navbar a:hover {
+            /* color: black;
+             */
+            transform: translateY(20);
+            background-color: rgb(96, 96, 172);
+            border-radius: 20px;
+        }
+
+        .section{
+            height: 80vh;;
+            display: flex;
+            /* background-color: aliceblue; */
+            /* justify-content: center; */
+        }
+
+        .left{
+            position: relative;
+            width: 50%;
+            left: 0px;
+        }
+
+        .left h1{
+            color: white;
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+
+        .left h2{
+            color: rgb(96, 96, 185);
+            margin: 30px;    
+        }
+
+        .left h3{
+            color: white;
+            font-size: 20px;
+            margin: 30px;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        .explore{
+            padding: 15px 25px;
+            margin-top: 20px;
+            background-color: rgb(44 44 79);
+            color: white;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-left: 30px;
+            font-weight: bolder;
+            font-size: 16px;
+        }
+
+        .watch{
+            padding: 15px 25px;
+            margin-top: 20px;
+            background: transparent;
+            color: rgb(79, 79, 126);
+            cursor: pointer;
+            border-radius: 25px;
+            margin-left: 20px;
+            font-weight: bolder;
+            border: 2px solid white ;
+            font-size: 16px;
+        }
+
+        .watch:hover{
+            background-color: rgb(96, 96, 172);
+            color: white;
+        }
+
+        .explore:hover{
+            background-color: rgb(96, 96, 172);
+        }
+
+        .right{
+            width: 50%;;
+            position: relative;
+            right: 0px;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .right img{
+            width: 600px;
+            margin-top: 50;
+            border-radius: 500px;;
+            height: 80vh;
+        }
+
+        .icons{
+            margin-top: 80px;
+            margin-left: 30px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .icon1{
+            text-align: center;
+            height:60px;
+            border: 2px solid white;
+            border-radius: 45px;
+            margin: 10px;
+        }
+
+        .icon{
+            height: 30px;
+            margin: 15px;
+            border-radius: 20px;
+        }
+
+        .icon1:hover{
+            cursor: pointer;
+            background-color: rgb(96, 96, 172);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--  NAVBAR  -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <li class="nav-link"><a href="">SPACEX</a></li>
+        </div>
+
+        <div class="nav-right">
+            <li class="nav-link"><a href="">Home</a></li>
+            <li class="nav-link"><a href="">About</a></li>
+            <li class="nav-link"><a href="">Job</a></li>
+            <li class="nav-link"><a href="">Contact</a></li>
+        </div>
+        </nav>
+    <!-- NAVBAR ENDS -->
+
+    <div class="section">
+        <div class="left">
+            <h1>WELCOME</h1>
+            <h2>To SpaceX World
+            </h2>
+            <hr width="150" style="margin: 30px;">
+
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem quia doloribus autem perferendis, ex voluptates iusto ipsam, accusantium beatae tenetur ea explicabo corrupti? Nemo!</h3>
+            <button class="explore">EXPLORE</button>
+            <button class="watch">WATCH US</button>
+
+
+            <div class="icons">
+                <div class="icon1">
+                    <img src="./fb.jfif" alt="" class="icon">
+                </div>
+                <div class="icon1">
+                    <img src="./insta.jfif" alt="" class="icon">
+                </div>
+                <div class="icon1">
+                    <img src="./twit.jfif" alt="" class="icon">
+                </div>
+                <div class="icon1">
+                    <img src="./link.jfif" alt="" class="icon">
+                </div>
+
+            </div>
+        
+        </div>
+
+        <div class="right">
+            <img src="./astronaut-1946806_1920.jpg" alt="Astronaut JPG">
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
